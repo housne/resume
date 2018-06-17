@@ -21,7 +21,7 @@ postcss([precss, cssnano])
     // generate html code
     const output = template({ ...data, css: result.css });
     // save the index.html to dist directory
-    mkdirp(path.join(__dirname, "dist"));
+    mkdirp.sync(path.join(__dirname, "dist"));
     fs.writeFileSync(
       path.join(__dirname, "dist", "index.html"),
       output,
