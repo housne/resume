@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{ basics.name }}的个人简历</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <style type="text/css">
+      {{ css }}
+    </style>
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="top-section container">
+        <div class="titles">
+            <h1>{{ basics.name }}</h1>
+            <h2>{{ basics.label }}</h2>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <h2 class="title">联系方式</h2>
+      <div class="content item-list">
+        <div class="item">
+          <label>电话</label>
+          {{ basics.phone }}
+        </div>
+        <div class="item">
+          <label>邮箱</label>
+          <a href="mailto:{{ basics.email }}">{{ basics.email }}</a>
+        </div>
+        <div class="item">
+          <label>网站</label>
+          <a href="{{ basics.website }}">{{ basics.website }}</a>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <h2 class="title">自我介绍</h2>
+      <div class="content text">
+        {{ basics.summary }}
+      </div>
+    </section>
+    <section class="container">
+      <h2 class="title">社交网络</h2>
+      <div class="content item-list">
+        {% for provider in basics.profiles %}
+        <div class="item">
+          <label>{{ provider.network }}</label>
+          <a href="{{ provider.url }}">{{ provider.username }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    <section class="container">
+      <h2 class="title">工作经历</h2>
+      <div class="content">
+        {% for experience in workExperience %}
+          <div class="experience">
+            <div class="title">
+              <h2 class="name">{{ experience.company }}</h2>
+              <div class="duration">{{ experience.startDate }} - {{ experience.endDate }}</div>
+            </div>
+            <div class="sub-title">
+              <h4 class="position">{{ experience.position }}</h4>
+              <a class="website" href="{{ experience.website }}">{{ experience.website }}</a>
+            </div>
+            <div class="text">{{ experience.summary }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+    <section class="container">
+      <h2 class="title">项目经历</h2>
+      <div class="content">
+        {% for experience in projects %}
+          <div class="experience">
+            <div class="title">
+              <h2 class="name">{{ experience.name }}</h2>
+              <div class="duration">{{ experience.startDate }} - {{ experience.endDate }}</div>
+            </div>
+            <div class="sub-title">
+              <h4 class="position">{{ experience.position }}</h4>
+              <a class="website" href="{{ experience.website }}">{{ experience.website }}</a>
+            </div>
+            <div class="text">{{ experience.summary }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+    <section class="container">
+      <h2 class="title">教育经历</h2>
+      <div class="content">
+        {% for experience in education %}
+          <div class="experience">
+            <div class="title">
+              <h2 class="name">{{ experience.institution }}</h2>
+              <div class="duration">{{ experience.startDate }} - {{ experience.endDate }}</div>
+            </div>
+            <div class="sub-title">
+              <h4 class="position">{{ experience.position }}</h4>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  </body>
+</html>
