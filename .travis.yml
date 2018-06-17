@@ -1,0 +1,21 @@
+language: node_js
+node_js: stable
+install:
+- npm install
+script:
+- npm run build
+deploy:
+- provider: pages
+  skip-cleanup: true
+  github-token: "$GH_TOKEN"
+  keep-history: true
+  target-branch: master
+  local-dir: dist
+  on:
+    branch: source
+branches:
+  only:
+  - source
+notifications:
+  slack:
+    secure: bKSp7KFOWQjolNOe/Lds4vwtYKszIiA5sE/FjHRoI28HNFSdEPAVmYzlbqC2Jcng1xvT6uEM5j+sEQsL6MrW1C2G2qFkolPMI+k8w+qPoredMTjDliuRnFwLmLvbSjb90bsxPTii3Qlo+2QN4QZRP04kpAfl3PS8JQDT2JEr90h3Q/0LxjsgmOILvhlV7dwbrsp99SWouJveMRn9fkodU/twtxZ/Rj1qFh3O8oA0Afitl86FIEN+OJrMFANywYnmVyilmmJfJt/c8IT3GMF6KMZsJh1z/b+9HLblF94j5JZin4EAflhWCYxK5TQx3qFqJgEeZX4IPFZYkMavBqbKvQUbAtfpYFhRdyBy2D4WZFCAru2v9Sy6Z3Dglco2uhlzZ+07vKxIL/9cApHFo3UbBhrT6ynBgnlA224/u9HG/Askx1zQcMgfmCD1GcnVaHtdQVZqucyhZilqevdqgERr9AHAjAerez85dpKyc4y8i6S/htLU07AplGrOyaVdov6BljqOmiuYHwzfqDmoEl4Hra3YvpRgKmXr8yg6L97wHt1a4MbRap4YEq7YRb8wKmfjg6ybU/JZHPxhkZc0VTvKwwxJk7Ozy3DNN5KYPA5ek4a2zSkFHDZI9PRqhx97ZHfLqoVJ4IhJ1iZLqHmb6qG35DQZ2vtX179reKLgoIM4vlQ=
