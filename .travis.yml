@@ -5,8 +5,7 @@ sudo: required
 addons:
   chrome: stable
 before_install:
-- locale-gen zh_CN.UTF-8
-- sudo update-locale
+- sudo apt-get install fonts-wqy-zenhei
 - google-chrome-stable --headless --disable-gpu
 install:
 - npm install
