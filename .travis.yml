@@ -5,6 +5,8 @@ sudo: required
 addons:
   chrome: stable
 before_install:
+- locale-gen zh_CN.UTF-8
+- update-locale
 - google-chrome-stable --headless --disable-gpu
 install:
 - npm install
