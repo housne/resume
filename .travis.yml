@@ -5,7 +5,7 @@ sudo: required
 addons:
   chrome: stable
 before_install:
-- sudo apt-get install fonts-wqy-zenhei
+- sudo apt-get install fonts-wqy-microhei
 - google-chrome-stable --headless --disable-gpu
 install:
 - npm install
