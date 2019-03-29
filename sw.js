@@ -1,5 +1,5 @@
 var CACHE_NAME = "resume-cache-v1.3";
-var urlsToCache = ["/", "/index.html", "/mail.html", "/resume.pdf"];
+var urlsToCache = ["/", "/index.html"];
 
 self.addEventListener("install", function(event) {
   event.waitUntil(
