@@ -13,7 +13,7 @@ const render = require("./render");
 
 const DIST_FOLDER = path.join(__dirname, "dist");
 
-render().then(html => {
+render().then(output => {
   // save the index.html to dist directory
   mkdirp.sync(DIST_FOLDER);
   fs.writeFileSync(path.join(DIST_FOLDER, "index.html"), output, "utf8");
