@@ -5,8 +5,8 @@
     "label": "前端开发工程师",
     "email": "housne@gmail.com",
     "phone": "18002583875",
-    "website": "http://goharry.me",
-    "summary": "五年前端开发经验，良好的JS语言基础，熟悉HTML、CSS。学习能力强，了解熟悉前端行业热点技术和理念，如(React, React native, Vue, Rxjs, Flow, Typescript等)，良好的英文阅读能力，熟悉 *nix 开发环境(基本使用 macos 系统)。熟悉后台开发语言 Python(有实际应用开发经验)。",
+    "website": "https://goharry.dev",
+    "summary": "七年前端开发经验，良好的 Javascript 语言基础，熟悉HTML、CSS。学习能力强，了解熟悉前端行业热点技术和理念，如(React, Angular, Vue, Rxjs, Flow, Typescript等)，良好的英文阅读能力，熟悉 *nix 开发环境(基本使用 macOS 系统)。熟悉后台开发语言 Python(有实际应用开发经验)。",
     "location": {
       "city": "深圳"
     },
@@ -20,17 +20,22 @@
   },
   "workExperience": [
     {
+      "company": "华海乐盈",
+      "position": "高级开发主管",
+      "website": "http://www.huahaileying.com",
+      "startDate": "2017-04-29",
+      "endDate": "至今",
+      "summary": "负责包括VUE基础通用组件开发，前端开发环境搭建，前端构建工具实施。前端通用模块重构升级，前端关键技术研究和实施，解决开发中的前端难题，负责大陆金所对公业务系统 Web 前端开发，包括交易系统、票据系统、挂摘牌系统、跨境业务系统和不良资产交易平台，同时参与公司内部 CMS 系统前端开发。 主导重金所系统 Web 前端开发，包括交易系统、挂摘牌系统。",
+      "highlights": ["前端技术选型", "前端工程化", "前端共用基础组件(VUE 组件)"]
+    },
+    {
       "company": "平安集团前交所",
       "position": "高级开发工程师",
       "website": "http://www.qex.com",
       "startDate": "2016-08-29",
-      "endDate": "2017-02-23",
+      "endDate": "2017-04-25",
       "summary": "负责包括VUE基础通用组件开发，前端开发环境搭建，前端构建工具实施。前端通用模块重构升级，前端关键技术研究和实施，解决开发中的前端难题，负责大陆金所对公业务系统 Web 前端开发，包括交易系统、票据系统、挂摘牌系统、跨境业务系统和不良资产交易平台，同时参与公司内部 CMS 系统前端开发。 主导重金所系统 Web 前端开发，包括交易系统、挂摘牌系统。",
-      "highlights": [
-        "前端技术选型",
-        "前端工程化",
-        "前端共用基础组件(VUE 组件)"
-      ]
+      "highlights": ["前端技术选型", "前端工程化", "前端共用基础组件(VUE 组件)"]
     },
     {
       "company": "云筹",
@@ -107,26 +112,25 @@
       "studyType": "全日制",
       "startDate": "2005-09-01",
       "endDate": "2008-06-01"
+    },
+    {
+      "institution": "湖南大学",
+      "area": "计算机科学与技术",
+      "studyType": "函授",
+      "startDate": "2018-02-25",
+      "endDate": "在读"
     }
   ],
   "skills": [
     {
       "name": "前端开发",
       "level": "精通",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
+      "keywords": ["HTML", "CSS", "Javascript"]
     },
     {
       "name": "Python 开发",
       "level": "熟练",
-      "keywords": [
-        "Python",
-        "Django",
-        "Tornado"
-      ]
+      "keywords": ["Python", "Django", "Tornado"]
     }
   ],
   "languages": [

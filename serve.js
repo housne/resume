@@ -1,20 +1,15 @@
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
+const render = require("./render");
 
 // create a simple http server for debug
 const server = http.createServer(function(request, response) {
   response.writeHead(200, { "Content-Type": "text/html" });
-  try {
-    const html = fs.readFileSync(
-      path.join(__dirname, "dist/index.html"),
-      "utf8"
-    );
+  render().then(html => {
     response.write(html);
-  } catch (e) {
-    response.write(e.message);
-  }
-  response.end();
+    response.end();
+  });
 });
 
 server.listen(6001);
