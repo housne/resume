@@ -12,7 +12,6 @@ module.exports = function() {
   const data = JSON.parse(
     fs.readFileSync(path.join(__dirname, "resume.json"), "utf8")
   );
-  console.log(data);
   // process css with postcss
   return postcss([precss, autoprefixer, cssnano])
     .process(fs.readFileSync(path.join(__dirname, "style.scss"), "utf8"))
