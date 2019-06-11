@@ -158,7 +158,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -168,7 +169,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -333,17 +335,18 @@ template {
 }
 
 html {
-  font-size:14px
+  font-size: 14px;
 }
 
 body {
-  font-family:SF Pro SC,SF Pro Text,SF Pro Icons,PingFang SC,Helvetica Neue,Helvetica,Arial,sans-serif;
-  color:#333
+  font-family: SF Pro SC, SF Pro Text, SF Pro Icons, PingFang SC, Helvetica Neue,
+    Helvetica, Arial, sans-serif;
+  color: #333;
 }
 
 a {
-  text-decoration:none; 
-  color:#009688
+  text-decoration: none;
+  color: #009688;
 }
 
 .top-header {
@@ -351,7 +354,8 @@ a {
   background: #eceff1;
   .top-section {
     padding: 0 1rem;
-    display: flex
+    display: flex;
+    align-items: center;
   }
   .titles {
     flex: 1;
@@ -366,6 +370,15 @@ a {
       font-weight: 400;
       color: #90a4ae;
       margin-bottom: 0;
+    }
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: solid 1px #009688;
+    border-radius: 4px;
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
     }
   }
 }
@@ -421,6 +434,12 @@ section.container {
         margin: 0;
       }
     }
+    .work-experience-list {
+      padding-left: 20px;
+      li {
+        margin: 10px 0;
+      }
+    }
   }
 }
 
@@ -429,7 +448,7 @@ section.container {
     max-width: 700px;
     margin: 0 auto;
   }
-  .top-header  {
+  .top-header {
     .titles {
       padding-left: 28%;
     }
@@ -459,3 +478,10 @@ section.container {
   }
 }
 
+@media print {
+  .top-header {
+    .buttons {
+      display: none;
+    }
+  }
+}

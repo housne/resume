@@ -14,4 +14,4 @@ const server = http.createServer(function(request, response) {
 
 server.listen(6001);
 
-console.log("Server is listening");
+console.log("Server is listening on http://127.0.0.1:6001");

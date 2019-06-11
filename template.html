@@ -1,10 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>{{ basics.name }}的个人简历</title>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
     <style type="text/css">
       {{ css }}
     </style>
@@ -13,8 +18,13 @@
     <header class="top-header">
       <div class="top-section container">
         <div class="titles">
-            <h1>{{ basics.name }}</h1>
-            <h2>{{ basics.label }}</h2>
+          <h1>{{ basics.name }}</h1>
+          <h2>{{ basics.label }}</h2>
+        </div>
+        <div class="buttons">
+          <a href="https://housne.github.io/resume/resume.pdf" class="button"
+            >下载简历</a
+          >
         </div>
       </div>
     </header>
@@ -56,17 +66,25 @@
       <h2 class="title">工作经历</h2>
       <div class="content">
         {% for experience in workExperience %}
-          <div class="experience">
-            <div class="title">
-              <h2 class="name">{{ experience.company }}</h2>
-              <div class="duration">{{ experience.startDate }} - {{ experience.endDate }}</div>
+        <div class="experience">
+          <div class="title">
+            <h2 class="name">{{ experience.company }}</h2>
+            <div class="duration">
+              {{ experience.startDate }} - {{ experience.endDate }}
             </div>
-            <div class="sub-title">
-              <h4 class="position">{{ experience.position }}</h4>
-              <a class="website" href="{{ experience.website }}">{{ experience.website }}</a>
-            </div>
-            <div class="text">{{ experience.summary }}</div>
           </div>
+          <div class="sub-title">
+            <h4 class="position">{{ experience.position }}</h4>
+            <a class="website" href="{{ experience.website }}">{{
+              experience.website
+            }}</a>
+          </div>
+          <ul class="work-experience-list">
+          {% for summary in experience.summary %}
+          <li class="text">{{ summary }}</li>
+          {% endfor %}
+          </ul>
+        </div>
         {% endfor %}
       </div>
     </section>
@@ -74,17 +92,21 @@
       <h2 class="title">项目经历</h2>
       <div class="content">
         {% for experience in projects %}
-          <div class="experience">
-            <div class="title">
-              <h2 class="name">{{ experience.name }}</h2>
-              <div class="duration">{{ experience.startDate }} - {{ experience.endDate }}</div>
+        <div class="experience">
+          <div class="title">
+            <h2 class="name">{{ experience.name }}</h2>
+            <div class="duration">
+              {{ experience.startDate }} - {{ experience.endDate }}
             </div>
-            <div class="sub-title">
-              <h4 class="position">{{ experience.position }}</h4>
-              <a class="website" href="{{ experience.website }}">{{ experience.website }}</a>
-            </div>
-            <div class="text">{{ experience.summary }}</div>
           </div>
+          <div class="sub-title">
+            <h4 class="position">{{ experience.position }}</h4>
+            <a class="website" href="{{ experience.website }}">{{
+              experience.website
+            }}</a>
+          </div>
+          <div class="text">{{ experience.summary }}</div>
+        </div>
         {% endfor %}
       </div>
     </section>
@@ -92,17 +114,27 @@
       <h2 class="title">教育经历</h2>
       <div class="content">
         {% for experience in education %}
-          <div class="experience">
-            <div class="title">
-              <h2 class="name">{{ experience.institution }}</h2>
-              <div class="duration">{{ experience.startDate }} - {{ experience.endDate }}</div>
-            </div>
-            <div class="sub-title">
-              <h4 class="position">{{ experience.position }}</h4>
+        <div class="experience">
+          <div class="title">
+            <h2 class="name">{{ experience.institution }}</h2>
+            <div class="duration">
+              {{ experience.startDate }} - {{ experience.endDate }}
             </div>
           </div>
+          <div class="sub-title">
+            <h4 class="position">{{ experience.position }}</h4>
+          </div>
+        </div>
         {% endfor %}
       </div>
     </section>
+    <script>
+      if ("serviceWorker" in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js");
+        });
+      }
+    </script>
   </body>
 </html>

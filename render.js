@@ -14,7 +14,10 @@ module.exports = function() {
   );
   // process css with postcss
   return postcss([precss, autoprefixer, cssnano])
-    .process(fs.readFileSync(path.join(__dirname, "style.scss"), "utf8"))
+    .process(fs.readFileSync(path.join(__dirname, "style.scss"), "utf8"), {
+      from: "style.css",
+      to: "dist/style.css"
+    })
     .then(result => {
       const template = path.join(__dirname, "template.html");
       // generate html code

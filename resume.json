@@ -6,7 +6,7 @@
     "email": "housne@gmail.com",
     "phone": "18002583875",
     "website": "https://goharry.dev",
-    "summary": "七年前端开发经验，良好的 Javascript 语言基础，熟悉HTML、CSS。学习能力强，了解熟悉前端行业热点技术和理念，如(React, Angular, Vue, Rxjs, Flow, Typescript等)，良好的英文阅读能力，熟悉 *nix 开发环境(基本使用 macOS 系统)。熟悉后台开发语言 Python(有实际应用开发经验)。",
+    "summary": "七年前端开发经验，良好的 Javascript 语言基础，熟悉HTML、CSS。了解熟悉前端行业热点技术、理念，熟知和使用过常见前端框架(framework)和库(library)，如(React, Angular, Vue, Typescript, jQuery等)，良好的英文阅读能力，熟悉 *nix 开发环境(基本使用 macOS 系统)。熟悉后台开发语言 Python。",
     "location": {
       "city": "深圳"
     },
@@ -21,12 +21,21 @@
   "workExperience": [
     {
       "company": "华海乐盈",
-      "position": "高级开发主管",
+      "position": "前端开发主管",
       "website": "http://www.huahaileying.com",
       "startDate": "2017-04-29",
       "endDate": "至今",
-      "summary": "负责包括VUE基础通用组件开发，前端开发环境搭建，前端构建工具实施。前端通用模块重构升级，前端关键技术研究和实施，解决开发中的前端难题，负责大陆金所对公业务系统 Web 前端开发，包括交易系统、票据系统、挂摘牌系统、跨境业务系统和不良资产交易平台，同时参与公司内部 CMS 系统前端开发。 主导重金所系统 Web 前端开发，包括交易系统、挂摘牌系统。",
-      "highlights": ["前端技术选型", "前端工程化", "前端共用基础组件(VUE 组件)"]
+      "summary": [
+        "H5复杂关键模块开发",
+        "开发环境构建流程重构，完成按需构建，大幅提高构建和开发效率",
+        "React 基础模块重构，提高复用和拓展性",
+        "React 通用高价组件开发和维护"
+      ],
+      "highlights": [
+        "前端技术选型",
+        "前端工程化",
+        "前端共用基础组件(React 组件, Angular 组件)"
+      ]
     },
     {
       "company": "平安集团前交所",
@@ -34,7 +43,12 @@
       "website": "http://www.qex.com",
       "startDate": "2016-08-29",
       "endDate": "2017-04-25",
-      "summary": "负责包括VUE基础通用组件开发，前端开发环境搭建，前端构建工具实施。前端通用模块重构升级，前端关键技术研究和实施，解决开发中的前端难题，负责大陆金所对公业务系统 Web 前端开发，包括交易系统、票据系统、挂摘牌系统、跨境业务系统和不良资产交易平台，同时参与公司内部 CMS 系统前端开发。 主导重金所系统 Web 前端开发，包括交易系统、挂摘牌系统。",
+      "summary": [
+        "负责VUE基础通用组件开发，前端开发环境搭建，前端构建工具实施。",
+        "前端通用模块重构升级，前端关键技术研究和实施，解决开发中的前端难题。",
+        "负责大陆金所对公业务系统 Web 前端开发，包括交易系统、票据系统、挂摘牌系统、跨境业务系统和不良资产交易平台。",
+        "参与公司内部 CMS 系统前端开发。 主导重金所系统 Web 前端开发，包括交易系统、挂摘牌系统。"
+      ],
       "highlights": ["前端技术选型", "前端工程化", "前端共用基础组件(VUE 组件)"]
     },
     {
@@ -43,7 +57,14 @@
       "website": "https://www.yunchou.com",
       "startDate": "2015-05-01",
       "endDate": "2016-08-21",
-      "summary": "云筹所有web应用的前端开发，包括PC和移动网站，负责包括 React 基础通用组件开发，前端开发环境搭建，前端构建工具实施。前端技术分享和前端团队技术成长。 使用 React + alt + webpack 构建云筹移动端网站前端。负责移动端所有模块和系统的前端系统设计、开发维护。 使用 Python 作为 PC 端中间件请求后台 Java api 接口。负责PC端用户系统、认证系统和众筹项目等系统改版升级的前端开发工作",
+      "summary": [
+        "云筹所有web应用的前端开发，包括PC和移动网站",
+        "负责 React 基础通用组件开发，前端开发环境搭建，前端构建工具实施。",
+        "前端技术分享和前端团队技术成长。 ",
+        "使用 React + alt + webpack 构建云筹移动端网站。",
+        "负责移动端所有模块和系统的前端系统设计、开发维护。 ",
+        "使用 Python 作为 PC 端中间件请求后台 Java api 接口。负责PC端用户系统、认证系统和众筹项目等系统改版升级的前端开发工作"
+      ],
       "highlights": [
         "前端技术选型",
         "前端工程化",
@@ -56,7 +77,9 @@
       "website": "https://www.zhenai.com",
       "startDate": "2011-12-28",
       "endDate": "2015-05-01",
-      "summary": "PC网站前端通用模块开发，PC活动和游戏页面前端开发。 负责PC网站各系统的前端开发和维护。",
+      "summary": [
+        "PC网站前端通用模块开发，PC活动和游戏页面前端开发。 负责PC网站各系统的前端开发和维护。"
+      ],
       "highlights": [
         "网站活动快速前端开发",
         "基础组件开发(jQuery)",
@@ -118,14 +141,21 @@
       "area": "计算机科学与技术",
       "studyType": "函授",
       "startDate": "2018-02-25",
-      "endDate": "在读"
+      "endDate": "2020-06-25"
     }
   ],
   "skills": [
     {
       "name": "前端开发",
       "level": "精通",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Typescript",
+        "React",
+        "Angular"
+      ]
     },
     {
       "name": "Python 开发",
